@@ -1,11 +1,11 @@
 n=int(input("What is your number?   "))
 
-def fibonacci_lin(n):
+def fibonacci_lin(x):
 	fibonacci_numbers = [0,1]
-	for i in range(2,n):
+	for i in range(2,x+1):
 		fibonacci_numbers.append(fibonacci_numbers[i-1]+fibonacci_numbers[i-2])
-	return (fibonacci_numbers[n-1])
+	return (fibonacci_numbers[x])
 
 
-print (fibonacci_lin(n+1))
+print (fibonacci_lin(n))
   
